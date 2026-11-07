@@ -1,0 +1,1 @@
+"""VendorCommit AI backend."""

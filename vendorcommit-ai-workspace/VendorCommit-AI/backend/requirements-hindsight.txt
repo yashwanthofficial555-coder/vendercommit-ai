@@ -1,0 +1,4 @@
+# Install in a separate virtual environment/process from the VendorCommit API.
+hindsight-api-slim==1.2.0
+hindsight-client==1.2.0
+pg0-embedded==0.16.1

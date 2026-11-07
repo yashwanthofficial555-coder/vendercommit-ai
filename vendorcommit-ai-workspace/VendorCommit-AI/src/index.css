@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: Inter, sans-serif; color: #172033; background: #f7f8fa; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #dbeafe; color: #1557bd; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: #d6dce5; border-radius: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+.card { @apply rounded-xl border border-slate-200/90 bg-white shadow-card; }
+.btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700 active:scale-[.98]; }
+.btn-secondary { @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-3.5 py-2.5 text-sm font-medium text-slate-700 shadow-sm transition hover:bg-slate-50 active:scale-[.98]; }
+.input { @apply w-full rounded-lg border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10; }
+.label { @apply mb-1.5 block text-xs font-semibold text-slate-600; }
+.table-head { @apply border-y border-slate-100 bg-slate-50/70 text-left text-[11px] font-semibold uppercase tracking-[.055em] text-slate-500; }
+.table-head th { @apply px-5 py-3; }
+.table-row { @apply border-b border-slate-100 text-sm transition last:border-0 hover:bg-slate-50/60; }
+.table-row td { @apply px-5 py-4; }
+.page-enter { animation: page-in .3s ease-out; }
+@keyframes page-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse-dot { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
+.live-dot { animation: pulse-dot 2s infinite; }
+.recharts-cartesian-axis-tick-value { font-size: 11px; fill: #8a94a6; }
+.recharts-tooltip-wrapper { outline: none; }
